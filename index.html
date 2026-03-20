@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="Project.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <!-- Form for adding tasks -->
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter a task" required>
+            <input type="text" id="tag-input" placeholder="Optional tag">
+            <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Area for error messages -->
+        <p id="error-message" class="error"></p>
+
+        <!-- Section for filter controls -->
+        <div id="status-filters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="active">Active</button>
+            <button data-filter="completed">Completed</button>
+        </div>
+
+        <!-- Dropdown for tag filtering -->
+        <select id="tag-filter">
+            <option value="all">All Tags</option>
+        </select>
+
+        <!-- Active task counter -->
+        <p id="task-counter">0 active tasks</p>
+
+        <!-- Placeholder for the task list -->
+        <ul id="task-list">
+            <!-- Task items will be dynamically added here via JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Link your JavaScript file here -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

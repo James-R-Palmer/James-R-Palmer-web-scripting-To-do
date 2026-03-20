@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Form controls styling */
+#task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input, #tag-input, #status-filters button, #tag-filter {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#task-input {
+    flex-grow: 1;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Filter section styling */
+#status-filters {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+#status-filters .active {
+    background-color: #28a745;
+}
+
+#tag-filter {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Task list styling */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Task item basic styling (you'll add classes via JS later) */
+.task-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+/* Completed task visual difference (UX suggestion) */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    color: gray;
+}
+
+/* Error message styling */
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: none; /* Hide initially with CSS, show with JS */
+}
+
+#task-counter {
+    margin-top: 15px;
+    font-weight: bold;
+}
