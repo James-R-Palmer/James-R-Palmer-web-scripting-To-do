@@ -8,7 +8,7 @@ const statusFilterSelect = document.getElementById('status-filter');
 const tagFilterSelect = document.getElementById('tag-filter'); // Assumes this is in HTML
 const activeTaskCounter = document.getElementById('active-task-counter');
 
-// --- State ---
+
 let tasks = [];
 
 // ==========================================
@@ -60,7 +60,7 @@ function updateTagFilterOptions() {
     }
 }
 
-// Add a new task
+
 function addTask(text, tag) {
     const newTask = {
         id: Date.now(),
